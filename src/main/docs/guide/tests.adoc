@@ -1,0 +1,23 @@
+include::{commondir}/common-geb.adoc[]
+
+Create two pages:
+
+[source,groovy]
+.src/test/groovy/example/micronaut/HomePage.groovy
+----
+include::{sourceDir}/src/test/groovy/example/micronaut/HomePage.groovy[]
+----
+
+[source,groovy]
+.src/test/groovy/example/micronaut/LoginPage.groovy
+----
+include::{sourceDir}/src/test/groovy/example/micronaut/LoginPage.groovy[]
+----
+
+Create a test which verifies the user authentication flow.
+
+[source,groovy]
+.src/test/groovy/example/micronaut/SessionAuthenticationSpec.groovy
+----
+include::{sourceDir}/src/test/groovy/example/micronaut/SessionAuthenticationSpec.groovy[tag=clazz]
+----

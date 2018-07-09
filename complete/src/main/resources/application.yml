@@ -1,0 +1,17 @@
+micronaut:
+    application:
+        name: complete
+#tag::security[]
+micronaut:
+  security:
+    enabled: true # <1>
+    endpoints:
+      login:
+        enabled: true # <2>
+      logout:
+        enabled: true # <3>
+    session:
+      enabled: true # <4>
+      loginSuccessTargetUrl: / # <5>
+      loginFailureTargetUrl: /login/authFailed # <6>
+#end::security[]
