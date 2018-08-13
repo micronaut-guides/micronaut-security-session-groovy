@@ -20,7 +20,7 @@ include::{sourceDir}/build.gradle[tag=velocity]
 }
 ----
 
-Create two velocity templates:
+Create two velocity templates in `src/main/resources/views`:
 
 [source,groovy]
 .src/main/resources/templates/home.vm
