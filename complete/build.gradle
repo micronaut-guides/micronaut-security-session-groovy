@@ -31,27 +31,27 @@ repositories {
 
 dependencyManagement {
     imports {
-        mavenBom "io.micronaut:bom:$micronautVersion"
+        mavenBom "io.micronaut:micronaut-bom:$micronautVersion"
     }
 }
 
 dependencies {
-    compile "io.micronaut:http-client"
-    compile "io.micronaut:http-server-netty"
-    compile "io.micronaut:runtime-groovy"
-    compileOnly "io.micronaut:inject-groovy"
+    compile "io.micronaut:micronaut-http-client"
+    compile "io.micronaut:micronaut-http-server-netty"
+    compile "io.micronaut:micronaut-runtime-groovy"
+    compileOnly "io.micronaut:micronaut-inject-groovy"
     runtime "ch.qos.logback:logback-classic:1.2.3"
-    testCompile "io.micronaut:inject-groovy"
+    testCompile "io.micronaut:micronaut-inject-groovy"
     testCompile("org.spockframework:spock-core:1.1-groovy-2.4") {
         exclude group: "org.codehaus.groovy", module: "groovy-all"
     }
 
     //tag::securitydependency[]
-    compile "io.micronaut:security-session"
+    compile "io.micronaut:micronaut-security-session"
     //end::securitydependency[]
 
     //tag::velocity[]
-    compile "io.micronaut:views"
+    compile "io.micronaut:micronaut-views"
     compile "org.apache.velocity:velocity-engine-core:2.0"
     //end::velocity[]
 
