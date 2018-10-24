@@ -1,8 +1,12 @@
 Create the next configuration file:
 
-[source,groovy]
+[source,yaml]
 .src/main/resources/application.yaml
 ----
+micronaut:
+..
+..
+.
 include::{sourceDir}/src/main/resources/application.yml[tag=security]
 ----
 
