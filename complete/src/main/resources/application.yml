@@ -1,7 +1,9 @@
 micronaut:
   application:
     name: complete
+---
 #tag::security[]
+micronaut:
   security:
     enabled: true # <1>
     endpoints:
