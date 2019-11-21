@@ -90,3 +90,5 @@ tasks.withType(Test) {
     systemProperty "webdriver.gecko.driver", System.getProperty('webdriver.gecko.driver')
 }
 //end::taskWithTypeTest[]
+
+apply from: "${rootProject.projectDir}/gradle/testVerbose.gradle"
