@@ -48,6 +48,8 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
     testImplementation "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
     testImplementation "org.seleniumhq.selenium:selenium-api:$seleniumVersion"
+    testImplementation "org.seleniumhq.selenium:htmlunit-driver:2.35.1"
+    testRuntime 'net.sourceforge.htmlunit:htmlunit:2.35.0'
     //end::geb[]
 
     runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
