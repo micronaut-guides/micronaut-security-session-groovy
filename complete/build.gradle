@@ -38,7 +38,7 @@ dependencies {
     //end::securitydependency[]
 
     //tag::velocity[]
-    implementation "io.micronaut:micronaut-views"
+    implementation "io.micronaut:micronaut-views-velocity"
     implementation "org.apache.velocity:velocity-engine-core:2.0"
     //end::velocity[]
 
