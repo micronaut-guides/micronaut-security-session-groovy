@@ -1,6 +1,8 @@
 package example.micronaut.services
 
+import edu.umd.cs.findbugs.annotations.Nullable
 import groovy.transform.CompileStatic
+import io.micronaut.http.HttpRequest
 import io.micronaut.security.authentication.AuthenticationFailed
 import io.micronaut.security.authentication.AuthenticationProvider
 import io.micronaut.security.authentication.AuthenticationRequest
@@ -14,8 +16,9 @@ import javax.inject.Singleton
 @CompileStatic
 @Singleton // <1>
 class AuthenticationProviderUserPassword implements AuthenticationProvider { // <2>
+
     @Override
-    Publisher<AuthenticationResponse> authenticate(AuthenticationRequest authenticationRequest) {
+    Publisher<AuthenticationResponse> authenticate(@Nullable HttpRequest<?> httpRequest, AuthenticationRequest<?, ?> authenticationRequest) {
         if (authenticationRequest.identity == "sherlock" && authenticationRequest.secret == "password") {
             UserDetails userDetails = new UserDetails((String) authenticationRequest.identity, new ArrayList<>())
             return Flowable.just(userDetails) as Flowable<AuthenticationResponse>
