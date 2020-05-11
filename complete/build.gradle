@@ -1,6 +1,6 @@
 plugins {
     id "groovy"
-    id "com.github.johnrengelman.shadow" version "5.0.0"
+    id "com.github.johnrengelman.shadow" version "5.2.0"
     id "application"
     //tag::buildscriptDependenciesWebdriverBinaries[]
     id "com.github.erdi.webdriver-binaries" version "2.1"
