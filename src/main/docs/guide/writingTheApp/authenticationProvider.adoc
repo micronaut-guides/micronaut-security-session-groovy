@@ -1,9 +1,9 @@
 To keep this guide simple, create a naive `AuthenticationProvider` to simulate user's authentication.
 
 [source,groovy]
-.src/main/groovy/example/micronaut/services/AuthenticationProviderUserPassword.groovy
+.src/main/groovy/example/micronaut/AuthenticationProviderUserPassword.groovy
 ----
-include::{sourceDir}/src/main/groovy/example/micronaut/services/AuthenticationProviderUserPassword.groovy[]
+include::{sourceDir}/src/main/groovy/example/micronaut/AuthenticationProviderUserPassword.groovy[]
 ----
 
 <1> To register a Singleton in Micronaut's application context annotate your class with `javax.inject.Singleton`

@@ -1,9 +1,9 @@
 Create a file named `HomeController` which resolves the base URL `/`:
 
 [source,groovy]
-.src/main/groovy/example/micronaut/controllers/HomeController.groovy
+.src/main/groovy/example/micronaut/HomeController.groovy
 ----
-include::{sourceDir}/src/main/groovy/example/micronaut/controllers/HomeController.groovy[]
+include::{sourceDir}/src/main/groovy/example/micronaut/HomeController.groovy[]
 ----
 
 <1> Annotate with `io.micronaut.security.Secured` to configure security access. Use `isAnonymous()` expression to allow access to authenticated and unauthenticated users.
@@ -17,9 +17,9 @@ include::{sourceDir}/src/main/groovy/example/micronaut/controllers/HomeControlle
 Next, create `LoginAuthController` which renders the login form.
 
 [source,groovy]
-.src/main/groovy/example/micronaut/controllers/LoginAuthController.groovy
+.src/main/groovy/example/micronaut/LoginAuthController.groovy
 ----
-include::{sourceDir}/src/main/groovy/example/micronaut/controllers/LoginAuthController.groovy[]
+include::{sourceDir}/src/main/groovy/example/micronaut/LoginAuthController.groovy[]
 ----
 
 <1> Annotate with `io.micronaut.security.Secured` to configure security access. Use `isAnonymous()` expression for anonymous access.

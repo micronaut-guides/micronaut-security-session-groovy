@@ -1,4 +1,4 @@
-package example.micronaut.controllers
+package example.micronaut
 
 import groovy.transform.CompileStatic
 import io.micronaut.http.annotation.Controller
